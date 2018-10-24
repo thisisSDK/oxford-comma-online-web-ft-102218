@@ -1,6 +1,9 @@
 def oxford_comma(array)
-  array.join(",")
-    if the array has 2 componenets, .join("and")
-    elsif the array has 3 componenets, .join("," , "and")
+    if array.length ==2 
+      return "#{array[0]} and #{array[1]}" #the array has 2 componenets, .join("and")
+    elsif 2 < array.length 
+      array[-1] #the array has 3 componenets, .join("," , "and")
+  end
+    array.join(",")
 end
 
